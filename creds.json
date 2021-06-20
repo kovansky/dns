@@ -6,7 +6,7 @@
     "BaseURL": "https://api.sandbox.namecheap.com/xml.response"
   },
   "ovh": {
-    "app-key": "$OVH_APPKEY",
+    "app-key": "o3BHkamGJQ853WjI",
     "app-secret-key": "$OVH_APPSECRET",
     "consumer-key": "$OVH_CONSUMERKEY"
   }

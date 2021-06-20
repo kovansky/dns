@@ -1,0 +1,22 @@
+name: Deploy DNS zones
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  dnscontrol:
+    runs-on: ubuntu-latest
+    container:
+      image: stackexchange/dnscontrol
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy DNS config
+        run: dnscontrol push --config dnsconfig.js --creds creds.json
+        env:
+          NAMECHEAP_APIKEY: ${{ secrets.NAMECHEAP_APIKEY }}
+          NAMECHEAP_APIUSER: ${{ secrets.NAMECHEAP_APIUSER }}
+          OVH_APPSECRET: ${{ secrets.OVH_APPSECRET }}
+          OVH_CONSUMERKEY: ${{ secrets.OVH_CONSUMERKEY }}
