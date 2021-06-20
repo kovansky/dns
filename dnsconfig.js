@@ -1,9 +1,3 @@
-// Registrars
-var REGISTRAR_NONE = NewRegistrar("none", "NONE")
+require('providers.js') // Providers and DNS Providers
 
-// DNS Providers
-var PROVIDER_NAMECHEAP = NewDnsProvider("namecheap_sandbox", "NAMECHEAP")
-
-// Domains
-D("dnstest.live", REGISTRAR_NONE, DnsProvider(PROVIDER_NAMECHEAP),
-    A("@", "151.80.140.22"))
+require_glob('./domains/') // Domains
