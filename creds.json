@@ -1,9 +1,8 @@
 {
   "bind": {},
-  "namecheap_sandbox": {
+  "namecheap": {
     "apikey": "$NAMECHEAP_APIKEY",
-    "apiuser": "$NAMECHEAP_APIUSER",
-    "BaseURL": "https://api.sandbox.namecheap.com/xml.response"
+    "apiuser": "$NAMECHEAP_APIUSER"
   },
   "ovh": {
     "app-key": "o3BHkamGJQ853WjI",
