@@ -1,3 +1,3 @@
-require('./providers') // Providers and DNS Providers
+require('./providers.js') // Providers and DNS Providers
 
 require_glob('./domains/') // Domains
