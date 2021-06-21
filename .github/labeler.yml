@@ -7,8 +7,11 @@ repo:
   - ./*
 
 # Specific domains
-"Domain: robroyart.xyz":
+domain/robroyart.xyz:
   - dns/domains/robroyart.xyz.js
 
-"Domain: polishkendamacommunity.pl":
+domain/polishkendamacommunity.pl:
   - dns/domains/polishkendamacommunity.pl.js
+
+domain/f4dev.me:
+  - dns/domains/f4dev.me.js
