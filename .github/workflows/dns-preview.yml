@@ -48,11 +48,10 @@ jobs:
 
           # This is github environment file output: https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#environment-files
           echo 'dnscontrol_output<<EOF' >> $GITHUB_ENV
-          dnscontrol preview --config dns/dnsconfig.js --creds dns/creds.json --ir dns-config.json | head -n 250 >> $GITHUB_ENV
+          dnscontrol preview --config dns/dnsconfig.js --creds dns/creds.json --ir dns-config.json >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
         env:
-          NAMECHEAP_APIKEY: ${{ secrets.NAMECHEAP_APIKEY }}
-          NAMECHEAP_APIUSER: ${{ secrets.NAMECHEAP_APIUSER }}
+          CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           OVH_APPSECRET: ${{ secrets.OVH_APPSECRET }}
           OVH_CONSUMERKEY: ${{ secrets.OVH_CONSUMERKEY }}
 
