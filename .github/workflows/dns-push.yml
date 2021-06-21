@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy DNS config
-        run: dnscontrol push --config dnsconfig.js --creds creds.json
+        run: dnscontrol push --config dns/dnsconfig.js --creds dns/creds.json
         env:
           NAMECHEAP_APIKEY: ${{ secrets.NAMECHEAP_APIKEY }}
           NAMECHEAP_APIUSER: ${{ secrets.NAMECHEAP_APIUSER }}

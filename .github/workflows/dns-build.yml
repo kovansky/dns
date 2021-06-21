@@ -14,7 +14,7 @@ jobs:
       - name: Generate DNS config
         run: |
           mkdir dns-config
-          dnscontrol print-ir --config dnsconfig.js --out dns-config/dns-config.json
+          dnscontrol print-ir --config dns/dnsconfig.js --out dns-config/dns-config.json
           echo ${{ github.event.number }} > dns-config/pr-number
 
       - name: Publish DNS zone as artifact

@@ -48,7 +48,7 @@ jobs:
 
           # This is github environment file output: https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#environment-files
           echo 'dnscontrol_output<<EOF' >> $GITHUB_ENV
-          dnscontrol preview --ir dns-config.json | head -n 250 >> $GITHUB_ENV
+          dnscontrol preview --config dns/dnsconfig.js --creds dns/creds.json --ir dns-config.json | head -n 250 >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
         env:
           NAMECHEAP_APIKEY: ${{ secrets.NAMECHEAP_APIKEY }}

@@ -1,0 +1,11 @@
+# Base labels
+DNS:
+  - dns/**
+
+repo:
+  - .github/**
+  - ./*
+
+# Specific domains
+domain/robroyart.xyz:
+  - dns/domains/robroyart.xyz.js
