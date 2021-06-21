@@ -16,7 +16,6 @@ jobs:
       - name: Deploy DNS config
         run: dnscontrol push --config dns/dnsconfig.js --creds dns/creds.json
         env:
-          NAMECHEAP_APIKEY: ${{ secrets.NAMECHEAP_APIKEY }}
-          NAMECHEAP_APIUSER: ${{ secrets.NAMECHEAP_APIUSER }}
+          CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           OVH_APPSECRET: ${{ secrets.OVH_APPSECRET }}
           OVH_CONSUMERKEY: ${{ secrets.OVH_CONSUMERKEY }}

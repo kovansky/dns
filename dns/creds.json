@@ -1,8 +1,7 @@
 {
   "bind": {},
-  "namecheap": {
-    "apikey": "$NAMECHEAP_APIKEY",
-    "apiuser": "$NAMECHEAP_APIUSER"
+  "cloudflare": {
+    "apitoken": "$CLOUDFLARE_APITOKEN"
   },
   "ovh": {
     "app-key": "o3BHkamGJQ853WjI",
