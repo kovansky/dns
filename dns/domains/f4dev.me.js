@@ -1,12 +1,18 @@
 D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("*", LUTHARON),
-    A("@", "192.30.252.153", CF_PROXY_ON), // Github Pages
-    A("@", "192.30.252.154", CF_PROXY_ON), // Github Pages
+    // GitHub Pages
+    A("@", "192.30.252.153", CF_PROXY_ON),
+    A("@", "192.30.252.154", CF_PROXY_ON),
+    // Platforma hufiec
+    A("platforma", "178.32.203.125", CF_PROXY_ON),
+    A("www.platforma", "178.32.203.125", CF_PROXY_ON),
+    AAAA("platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
+    AAAA("www.platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
 
     MX("@", 0, "f4dev-me.mail.protection.outlook.com."),
 
-    CNAME("autodiscover", "autodiscover.outlook.com.", CF_PROXY_ON),
     CNAME("www", "kovansky.github.io.", CF_PROXY_ON), // Github Pages
+    CNAME("autodiscover", "autodiscover.outlook.com.", CF_PROXY_ON),
     CNAME("plugincontroller", "hosting.gitbook.io.", CF_PROXY_OFF), // Plugincontroller documentation
 
     TXT("default._domainkey", "v=DKIM1; k=rsa; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+kqPUJ7zu9Cjl/XOEaE7IGh+1f70Xelv0xwS5eQYh9ZQZdsfs74cc3lxgFr66ysDyD6wV41qyi/8r5A17HWMSiZ2KC6yqohPXh37J/DRIaw4Pfxcl2CAdxWeQFqtqoLvzf5AX1qFzoOz8oqPb0OpPs2TGMPyvnpYSUC1jcvGTDQIDAQAB"),
