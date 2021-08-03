@@ -18,7 +18,7 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
 
     // M365 configuration
     TXT("default._domainkey", "v=DKIM1; k=rsa; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+kqPUJ7zu9Cjl/XOEaE7IGh+1f70Xelv0xwS5eQYh9ZQZdsfs74cc3lxgFr66ysDyD6wV41qyi/8r5A17HWMSiZ2KC6yqohPXh37J/DRIaw4Pfxcl2CAdxWeQFqtqoLvzf5AX1qFzoOz8oqPb0OpPs2TGMPyvnpYSUC1jcvGTDQIDAQAB"),
-    TXT("_dmarc", "v=DMARC1; p=none; fo=1; rua=mailto:root@f4dev.me"),
+    TXT("_dmarc", "v=DMARC1;p=none;rua=mailto:8c96870c92@rua.easydmarc.eu,mailto:root@f4dev.me;ruf=mailto:8c96870c92@ruf.easydmarc.eu;fo=1"),
 
     SPF_BUILDER({
         label: "@",
