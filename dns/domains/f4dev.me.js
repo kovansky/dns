@@ -8,6 +8,9 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("www.platforma", "178.32.203.125", CF_PROXY_ON),
     AAAA("platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
     AAAA("www.platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
+    // Azure Functions - ZHP tests
+    TXT("asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
+    CNAME("zhp-tests", "zhp-tests.azurewebsites.net"),
 
     // M365 configuration
     MX("@", 0, "f4dev-me.mail.protection.outlook.com."),
