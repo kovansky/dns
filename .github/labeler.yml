@@ -15,3 +15,6 @@ domain/polishkendamacommunity.pl:
 
 domain/f4dev.me:
   - dns/domains/f4dev.me.js
+
+domain/qubatura.art:
+  - dns/domains/qubatura.art.js
