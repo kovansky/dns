@@ -8,3 +8,4 @@ var PROVIDER_OVH = NewDnsProvider("ovh", "OVH")
 
 // Other definitions
 var LUTHARON = IP("151.80.140.22") // Lutharon VPS IP address
+var ZENBOX_DCOACH = IP("2.57.138.154") // Zenbox DesignCoach server IP
