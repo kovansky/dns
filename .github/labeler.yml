@@ -19,5 +19,8 @@ domain/f4dev.me:
 domain/qubatura.art:
   - dns/domains/qubatura.art.js
 
+domain/qubatura.com.pl:
+  - dns/domains/qubatura.com.pl.js
+
 domain/designcoach.pl:
-  - dns/domains/designcoach.pl
+  - dns/domains/designcoach.pl.js
