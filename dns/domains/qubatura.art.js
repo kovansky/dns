@@ -1,4 +1,4 @@
-D("qubatura.art", REGISTRAR_NONE, DnsProvider(PROVIDER_OVH),
+D("qubatura.art", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   DefaultTTL(3600),
 
   A("@", LUTHARON),
