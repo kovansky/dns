@@ -2,8 +2,8 @@ D("robroyart.xyz", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     DefaultTTL(1),
 
     A("*", LUTHARON),
-    A("@", LUTHARON, CF_PROXY_ON),
-    A("www", LUTHARON, CF_PROXY_ON),
+    A("@", LUTHARON, CF_PROXY_OFF),
+    A("www", LUTHARON, CF_PROXY_OFF),
 
     MX('@', 10, 'eforward1.registrar-servers.com.'),
     MX('@', 10, 'eforward2.registrar-servers.com.'),
