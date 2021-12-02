@@ -16,7 +16,10 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 
   TXT("_dmarc", "v=DMARC1; p=none; sp=none"),
   TXT("_domainkey", "o=~"),
-  TXT("@", "v=spf1 a mx include:_spf.zenbox.pl -all")
+  TXT("@", "v=spf1 a mx include:_spf.zenbox.pl -all"),
+
+  TXT("@", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e"),
+  TXT("www", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e")
   // TXT("x._domainkey", "v=DKIM1; k=rsa;" +
   //     "
   //     p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1u3vMBgucfHZcs/yCYsX1Jx++HpiLvYa5aS88JovMnBHhCfA4zYPbRIOfnukGqc/Ksu0bjQMSHBMxltmQZX4ZvjxVfDKgtC9n0UpkSf2LgV2YI+uFUxXx9Zs3W80FTlGgBkcDfl/1Og6FID67/7e2+V7qqKkEgzPjgnxb4h4ZLy1RL+KfUNgnj71MtuKUrUeaFzIpBYClrPbeqsDcdSjre7o8BiLqBLK0KLMzyHjfxypVlo/NDuGh7NnIpUZgJxVIACsWyw2HJAed+7fRIcVOM+o7wj3WmF/+wq+oml+qBfGrKnYL1hmUgsA9dMbwR9XdXFGpZ7Rhyo2cw+c1MYWMQIDAQAB")
