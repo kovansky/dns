@@ -10,9 +10,6 @@ repo:
 domain/robroyart.xyz:
   - dns/domains/robroyart.xyz.js
 
-domain/polishkendamacommunity.pl:
-  - dns/domains/polishkendamacommunity.pl.js
-
 domain/f4dev.me:
   - dns/domains/f4dev.me.js
 
