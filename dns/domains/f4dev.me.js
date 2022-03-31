@@ -44,5 +44,6 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     TXT("@", "protonmail-verification=bbdbabda930c1f93a30c9476ddf19b60d5d4c4ad"),
     TXT("@", "google-site-verification=brapgpnqQD1QcBSyGqgeo0I983unWXauUPZp7P6bQxo"),
     TXT("@", "MS=ms48550399"),
-    TXT("ovhcontrol", "NP3Bj12omhML0lDqx2cEmw")
+    TXT("ovhcontrol", "NP3Bj12omhML0lDqx2cEmw"),
+    TXT("_github-pages-challenge-kovansky", "007ed8d070b9f6c96a12597268b299"),
 )
