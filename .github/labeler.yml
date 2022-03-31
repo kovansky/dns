@@ -26,10 +26,10 @@ domain/akademiaurzadzania.pl:
   - dns/domains/akademiaurzadzania.pl.js
 
 domain/homecoach.pl:
-  - dns/domain/homecoach.pl.js
+  - dns/domains/homecoach.pl.js
 
 domain/wnetrzabardzoosobiste.pl:
-  - dns/domain/wnetrzabardzoosobiste.pl.js
+  - dns/domains/wnetrzabardzoosobiste.pl.js
 
 # Domain groups/families
 group/qubatura_company:
@@ -45,5 +45,5 @@ group/qubatura_company:
 group/designcoach:
   - dns/domains/designcoach.pl.js
   - dns/domains/akademiaurzadzania.pl.js
-  - dns/domain/homecoach.pl.js
-  - dns/domain/wnetrzabardzoosobiste.pl.js
+  - dns/domains/homecoach.pl.js
+  - dns/domains/wnetrzabardzoosobiste.pl.js
