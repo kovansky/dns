@@ -14,7 +14,12 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy DNS config
-        run: dnscontrol push --config dns/dnsconfig.js --creds dns/creds.json
+        uses: wblondel/dnscontrol-action@v3.15.0
+        with:
+          args: push
+
+          config_file: 'dns/dnsconfig.js'
+          creds_file: 'dns/creds.json'
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           OVH_APPSECRET: ${{ secrets.OVH_APPSECRET }}
