@@ -34,7 +34,7 @@ jobs:
               repo: context.repo.repo,
               body: `
               \`\`\`
-              ${{ steps.dnscontrol_preview.outputs.preview_output }}
+              ${{ steps.dnscontrol_preview.outputs.preview_comment }}
               \`\`\`
               `
             })

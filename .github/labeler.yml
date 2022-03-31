@@ -21,3 +21,29 @@ domain/qubatura.com.pl:
 
 domain/designcoach.pl:
   - dns/domains/designcoach.pl.js
+
+domain/akademiaurzadzania.pl:
+  - dns/domains/akademiaurzadzania.pl.js
+
+domain/homecoach.pl:
+  - dns/domain/homecoach.pl.js
+
+domain/wnetrzabardzoosobiste.pl:
+  - dns/domain/wnetrzabardzoosobiste.pl.js
+
+# Domain groups/families
+group/qubatura_company:
+  - dns/domains/robroyart.xyz.js
+  - dns/domains/f4dev.me.js
+  - dns/domains/qubatura.art.js
+  - dns/domains/qubatura.com.pl.js
+  - dns/domains/designcoach.pl.js
+  - dns/domains/akademiaurzadzania.pl.js
+  - dns/domain/homecoach.pl.js
+  - dns/domain/wnetrzabardzoosobiste.pl.js
+
+group/designcoach:
+  - dns/domains/designcoach.pl.js
+  - dns/domains/akademiaurzadzania.pl.js
+  - dns/domain/homecoach.pl.js
+  - dns/domain/wnetrzabardzoosobiste.pl.js
