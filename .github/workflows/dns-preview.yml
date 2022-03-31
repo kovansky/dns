@@ -12,7 +12,7 @@ jobs:
 
       - name: Generate DNS changes
         id: dnscontrol_preview
-        uses: koenrh/dnscontrol-action@v3
+        uses: wblondel/dnscontrol-action@v3.15.0
         with:
           config_file: dns/dnsconfig.js
           creds_file: dns/creds.json
