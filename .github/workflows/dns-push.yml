@@ -18,8 +18,8 @@ jobs:
         with:
           args: push
 
-          config_file: dns/dnsconfig.js
-          creds_file: dns/creds.json
+          config_file: 'dns/dnsconfig.js'
+          creds_file: 'dns/creds.json'
         env:
           CLOUDFLARE_APITOKEN: ${{ secrets.CLOUDFLARE_APITOKEN }}
           OVH_APPSECRET: ${{ secrets.OVH_APPSECRET }}
