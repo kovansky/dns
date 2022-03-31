@@ -22,12 +22,20 @@ jobs:
           OVH_CONSUMERKEY: ${{ secrets.OVH_CONSUMERKEY }}
 
       - name: Add comment to the pull request
-        uses: unsplash/comment-on-pr@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v4
         with:
-          msg: |
-            ```
-            ${{ steps.dnscontrol_preview.outputs.preview_comment }}
-            ```
-          check_for_duplicate_msg: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            var fs = require('fs');
+            var issue_number = Number(fs.readFileSync('pr-number'));
+            
+            github.issues.createComment({
+              issue_number: issue_number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `
+              \`\`\`
+              ${{ steps.dnscontrol_preview.outputs.preview_output }}
+              \`\`\`
+              `
+            })
