@@ -7,7 +7,7 @@ function OVH_REDIRECT(domain, target, code) {
   }
 
   return [
-    TXT(domain, code + "|" + target, TTL(60)),
+    TXT(domain, type + "|" + target, TTL(60)),
     A(domain, OVH_REDIR_SERVER, TTL(0))
   ];
 }
