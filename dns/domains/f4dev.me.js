@@ -25,7 +25,6 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     CNAME("www", "kovansky.github.io.", CF_PROXY_ON), // Github Pages
     CNAME("autodiscover", "autodiscover.outlook.com.", CF_PROXY_OFF), // M365 Autodiscover
     CNAME("plugincontroller", "hosting.gitbook.io.", CF_PROXY_OFF), // Plugincontroller documentation
-    CNAME('zen-preview', 'kovansky.github.io.', CF_PROXY_ON), // Podgląd motywu Zen
 
     // M365 configuration
     TXT("default._domainkey", "v=DKIM1; k=rsa; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+kqPUJ7zu9Cjl/XOEaE7IGh+1f70Xelv0xwS5eQYh9ZQZdsfs74cc3lxgFr66ysDyD6wV41qyi/8r5A17HWMSiZ2KC6yqohPXh37J/DRIaw4Pfxcl2CAdxWeQFqtqoLvzf5AX1qFzoOz8oqPb0OpPs2TGMPyvnpYSUC1jcvGTDQIDAQAB"),
