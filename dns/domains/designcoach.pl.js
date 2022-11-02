@@ -5,6 +5,7 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   A("*", ZENBOX_DCOACH),
   A("www", ZENBOX_DCOACH),
   A("localhost", IP("127.0.0.1")),
+  A("admin", LUTHARON),
 
   MX("@", 10, "mx1.zenbox.pl."),
   MX("@", 20, "mx1.zenbox.pl."),
