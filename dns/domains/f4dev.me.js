@@ -1,5 +1,5 @@
 D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
-    A("*", LUTHARON),
+    A("*", AZYMONDIAS),
     // GitHub Pages
     A("@", "192.30.252.153", CF_PROXY_ON),
     A("@", "192.30.252.154", CF_PROXY_ON),
@@ -18,6 +18,8 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     TXT("asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
     CNAME("www.zhp-tests", "zhp-tests.azurewebsites.net."),
     TXT("www.asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
+    // Old Zen panel
+    OVH_REDIRECT("zen-cms", "https://panel.zencentrum.pl", 301),
 
     // M365 configuration
     MX("@", 0, "f4dev-me.mail.protection.outlook.com."),

@@ -1,9 +1,9 @@
 D("qubatura.com.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   DefaultTTL(3600),
 
-  A("@", LUTHARON),
-  A("*", LUTHARON),
-  A("www", LUTHARON),
+  A("@", AZYMONDIAS),
+  A("*", AZYMONDIAS),
+  A("www", AZYMONDIAS),
 
   MX("@", 10, "mx1.zenbox.pl."),
   MX("@", 20, "mx1.zenbox.pl."),
