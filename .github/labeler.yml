@@ -31,6 +31,9 @@ domain/homecoach.pl:
 domain/wnetrzabardzoosobiste.pl:
   - dns/domains/wnetrzabardzoosobiste.pl.js
 
+domain/eduquality.eu:
+  - dns/domains/eduquality.eu.js
+
 # Domain groups/families
 group/qubatura_company:
   - dns/domains/robroyart.xyz.js
