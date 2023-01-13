@@ -8,11 +8,11 @@ D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
     MX('@', 1, 'mx1.mail.ovh.net.'),
     MX('@', 5, 'mx2.mail.ovh.net.'),
 
-    TXT('@', '1|www.eduquality.eu'),
     TXT('@', 'v=spf1 include:mx.ovh.com ~all'),
-    TXT('www', '3|welcome'),
 
+    // Github Pages
     CNAME("staging", "kovansky.github.io."),
+    // OVH defaults
     CNAME('autoconfig', 'mailconfig.ovh.net.'),
     CNAME('autodiscover', 'mailconfig.ovh.net.'),
     CNAME('ftp', 'eduquality.eu.'),
