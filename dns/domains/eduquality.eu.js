@@ -1,8 +1,8 @@
 D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
     DefaultTTL(3600),
 
-    A('@', '213.186.33.5'),
-    A('www', '213.186.33.5'),
+    A('@', '213.32.10.205'),
+    A('www', '213.32.10.205'),
 
     MX('@', 100, 'mx3.mail.ovh.net.'),
     MX('@', 1, 'mx1.mail.ovh.net.'),
