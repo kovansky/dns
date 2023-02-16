@@ -1,6 +1,7 @@
 D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("*", AZYMONDIAS),
     A("lutharon", LUTHARON),
+    A("panel.lutharon", LUTHARON),
     // GitHub Pages
     A("@", "192.30.252.153", CF_PROXY_ON),
     A("@", "192.30.252.154", CF_PROXY_ON),
