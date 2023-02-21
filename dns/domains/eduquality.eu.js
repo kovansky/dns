@@ -3,6 +3,8 @@ D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 
     A('@', '213.32.10.205'),
     A('www', '213.32.10.205'),
+    A("staging", AZYMONDIAS),
+    A("secure", AZYMONDIAS),
 
     MX('@', 100, 'mx3.mail.ovh.net.'),
     MX('@', 1, 'mx1.mail.ovh.net.'),
@@ -24,8 +26,6 @@ D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
         ]
     }),
 
-    // Github Pages
-    CNAME("staging", "kovansky.github.io."),
     // OVH defaults
     CNAME('autoconfig', 'mailconfig.ovh.net.'),
     CNAME('autodiscover', 'mailconfig.ovh.net.'),
