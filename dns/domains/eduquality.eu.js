@@ -8,8 +8,21 @@ D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
     MX('@', 1, 'mx1.mail.ovh.net.'),
     MX('@', 5, 'mx2.mail.ovh.net.'),
 
-    TXT('@', 'v=spf1 include:mx.ovh.com ~all'),
     TXT("_github-pages-challenge-kovansky", "25d2909c338b1a326513c2fc8cd00a"),
+
+    // Sendinblue mailing
+    TXT("@", "sendinblue-code:db57fe1ad62c147c5f8cb33330078645"),
+    TXT("mail._domainkey", "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB"),
+    SPF_BUILDER({
+        label: "@",
+        parts: [
+            "v=spf1",
+            "include:mx.ovh.com", // OVH mail
+            "include:spf.sendinblue.com", // Sendinblue transactional mailing
+            "mx",
+            "-all"
+        ]
+    }),
 
     // Github Pages
     CNAME("staging", "kovansky.github.io."),
