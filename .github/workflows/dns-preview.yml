@@ -12,7 +12,7 @@ jobs:
 
       - name: Generate DNS changes
         id: dnscontrol_preview
-        uses: wblondel/dnscontrol-action@v3.15.0
+        uses: koenrh/dnscontrol-action@v3.23.0
         with:
           args: preview
 
