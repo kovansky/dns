@@ -1,11 +1,16 @@
 {
   "bind": {},
   "cloudflare": {
+    "TYPE": "CLOUDFLAREAPI",
     "apitoken": "$CLOUDFLARE_APITOKEN"
   },
   "ovh": {
+    "TYPE": "OVH",
     "app-key": "o3BHkamGJQ853WjI",
     "app-secret-key": "$OVH_APPSECRET",
     "consumer-key": "$OVH_CONSUMERKEY"
+  },
+  "none": {
+    "TYPE": "NONE"
   }
 }
