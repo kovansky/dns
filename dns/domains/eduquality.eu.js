@@ -1,8 +1,8 @@
 D("eduquality.eu", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
     DefaultTTL(3600),
 
-    A('@', '213.32.10.205'),
-    A('www', '213.32.10.205'),
+    A('@', AZYMONDIAS),
+    A('www', AZYMONDIAS),
     A("staging", AZYMONDIAS),
     A("secure", AZYMONDIAS),
 
