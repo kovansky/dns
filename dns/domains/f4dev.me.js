@@ -17,7 +17,7 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     AAAA("www.hufiec2", "2001:41d0:301:5::27", CF_PROXY_ON),
     // UFO Media
     A("ufo.cms", LUTHARON, CF_PROXY_OFF),
-    A("ufo.preview", LUTHARON, CF_PROXY_OFF),
+    A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
     // ZHP tests
     CNAME("zhp-tests", "zhp-tests.azurewebsites.net."),
     TXT("asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
