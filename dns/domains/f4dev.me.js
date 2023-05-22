@@ -29,6 +29,10 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     // Old Zen panel
     OVH_REDIRECT("zen-cms", "https://panel.zencentrum.pl", 301),
 
+    // Mailing
+    TXT("mailing", "brevo-code:d9a1747d2432c54b9b182c5481c6176a"),
+    TXT('mail._domainkey.mailing', "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB"),
+
     // M365 configuration
     MX("@", 0, "f4dev-me.mail.protection.outlook.com."),
 
