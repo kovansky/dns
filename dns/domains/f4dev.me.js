@@ -17,6 +17,9 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("www.hufiec2", "178.32.203.125", CF_PROXY_ON),
     AAAA("hufiec2", "2001:41d0:301:5::27", CF_PROXY_ON),
     AAAA("www.hufiec2", "2001:41d0:301:5::27", CF_PROXY_ON),
+    // Preview 5DW
+    A("5dw", "178.32.203.125", CF_PROXY_ON),
+    AAAA("5dw", "2001:41d0:301:5::27", CF_PROXY_ON),
     // UFO Media
     A("ufo.cms", LUTHARON, CF_PROXY_OFF),
     A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
