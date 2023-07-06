@@ -23,6 +23,8 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     // UFO Media
     A("ufo.cms", LUTHARON, CF_PROXY_OFF),
     A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
+    CNAME("ufo.fly", "ufo-starbase.fly.dev."),
+    CNAME('ufo-assets', 'public.r2.dev.', CF_PROXY_ON),
     // Design system - UFO
     CNAME("stardust.ufo", "kovansky.github.io.", CF_PROXY_OFF), // Github Pages
     // ZHP tests
