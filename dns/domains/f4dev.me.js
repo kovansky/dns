@@ -35,6 +35,10 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     TXT("www.asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
     // Old Zen panel
     OVH_REDIRECT("zen-cms", "https://panel.zencentrum.pl", 301),
+    // ZHP WoodBadge
+    A("be.wb", LUTHARON),
+    A("krk.wb", LUTHARON),
+    A("mein.wb", LUTHARON),
 
     // Mailing
     TXT("mailing", "brevo-code:d9a1747d2432c54b9b182c5481c6176a"),
