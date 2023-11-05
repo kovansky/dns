@@ -39,6 +39,8 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("be.wb", LUTHARON),
     A("krk.wb", LUTHARON),
     A("mein.wb", LUTHARON),
+    // Polka Potrafi
+    A("polkapotrafi", LUTHARON),
 
     // Mailing
     TXT("mailing", "brevo-code:d9a1747d2432c54b9b182c5481c6176a"),
