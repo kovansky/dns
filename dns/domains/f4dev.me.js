@@ -3,44 +3,25 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("lutharon", LUTHARON),
     A("panel.lutharon", LUTHARON),
     A("search.services", LUTHARON),
-    A("image.services", LUTHARON),
-    A("zhp", LUTHARON),
-    // GitHub Pages
+
+    // GitHub Pages f4dev
     A("@", "192.30.252.153", CF_PROXY_ON),
     A("@", "192.30.252.154", CF_PROXY_ON),
+
     // Platforma hufiec
     A("platforma", "178.32.203.125", CF_PROXY_ON),
     A("www.platforma", "178.32.203.125", CF_PROXY_ON),
     AAAA("platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
     AAAA("www.platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
-    // Debugging strony hufca
-    A("hufiec2", "178.32.203.125", CF_PROXY_ON),
-    A("www.hufiec2", "178.32.203.125", CF_PROXY_ON),
-    AAAA("hufiec2", "2001:41d0:301:5::27", CF_PROXY_ON),
-    AAAA("www.hufiec2", "2001:41d0:301:5::27", CF_PROXY_ON),
-    // Preview 5DW
-    A("5dw", "178.32.203.125", CF_PROXY_ON),
-    AAAA("5dw", "2001:41d0:301:5::27", CF_PROXY_ON),
+
     // UFO Media
-    A("ufo.cms", LUTHARON, CF_PROXY_OFF),
+    OVH_REDIRECT("ufo.cms", "https://panel.ufomedia.pl/admin", 301),
     A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
     CNAME("ufo.fly", "ufo-starbase.fly.dev."),
     CNAME('ufo-assets', 'public.r2.dev.', CF_PROXY_ON),
-    // Design system - UFO
-    CNAME("stardust.ufo", "kovansky.github.io.", CF_PROXY_OFF), // Github Pages
-    // ZHP tests
-    CNAME("zhp-tests", "zhp-tests.azurewebsites.net."),
-    TXT("asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
-    CNAME("www.zhp-tests", "zhp-tests.azurewebsites.net."),
-    TXT("www.asuid.zhp-tests", "59AD87167F51C48A766AD27F7323B2C08FF48AE5A2B5C67D7CF6A80F216A7E66"),
+
     // Old Zen panel
     OVH_REDIRECT("zen-cms", "https://panel.zencentrum.pl", 301),
-    // ZHP WoodBadge
-    A("be.wb", LUTHARON),
-    A("krk.wb", LUTHARON),
-    A("mein.wb", LUTHARON),
-    // Polka Potrafi
-    A("polkapotrafi", LUTHARON),
 
     // Mailing
     TXT("mailing", "brevo-code:d9a1747d2432c54b9b182c5481c6176a"),
