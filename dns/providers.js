@@ -7,7 +7,6 @@ var PROVIDER_CLOUDFLARE = NewDnsProvider("cloudflare");
 var PROVIDER_OVH        = NewDnsProvider("ovh");
 
 // Other definitions
-var LUTHARON         = IP("151.80.140.22"); // Lutharon VPS IP address
 var AZYMONDIAS         = IP("217.182.78.46"); // Azymondias VPS IP address
 var ZENBOX_DCOACH    = IP("2.57.138.154"); // Zenbox DesignCoach server IP
 var OVH_REDIR_SERVER = IP("213.186.33.5"); // OVH redirects service IP
