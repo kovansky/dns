@@ -35,5 +35,5 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   }),
 
   TXT("@", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e"),
-  TXT("www", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e"),
+  TXT("www", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e")
 );
