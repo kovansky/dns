@@ -1,9 +1,9 @@
 D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   DefaultTTL(900),
 
-  A("@", ZENBOX_DCOACH),
-  A("*", ZENBOX_DCOACH),
-  A("www", ZENBOX_DCOACH),
+  A("@", DOMENOMANIA_DCOACH),
+  A("*", DOMENOMANIA_DCOACH),
+  A("www", DOMENOMANIA_DCOACH),
   A("preview", DOMENOMANIA_DCOACH), // Drafts website
   A("prezent", DOMENOMANIA_DCOACH),
   A("panel", AZYMONDIAS),
