@@ -27,7 +27,8 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
           "v=spf1",
           // Domenomania
           "ip4:185.17.40.218",
-          "ip4:185.17.43.200,",
+          "ip4:185.17.43.200",
+          "ip4:185.17.43.198",
           "include:spf.domenomania.pl",
           // General
           "-all"
