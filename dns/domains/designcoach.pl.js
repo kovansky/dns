@@ -9,7 +9,7 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   A("mail", DOMENOMANIA_DCOACH),
   A("panel", AZYMONDIAS),
 
-  MX("@", 0, "mail.designcoach.pl"),
+  MX("@", 0, "mail.designcoach.pl."),
 
   CNAME("_96C2D4280C9AC09B2B5AAD694C5F69E9", "73CF3CD81224E3E9D499C5446D51A18F.9FE2C266CE89B0D5DF89FEA0F1375AC9.t0897039001607076961.comodoca.com."), // SSL
   CNAME("autoconfig", "mua-ac-1.zenbox.pl."), // Mailbox
