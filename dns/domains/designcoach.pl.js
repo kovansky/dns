@@ -6,11 +6,10 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   A("www", DOMENOMANIA_DCOACH),
   A("preview", DOMENOMANIA_DCOACH), // Drafts website
   A("prezent", DOMENOMANIA_DCOACH),
+  A("mail", DOMENOMANIA_DCOACH),
   A("panel", AZYMONDIAS),
 
-  MX("@", 10, "mx1.zenbox.pl."),
-  MX("@", 20, "mx1.zenbox.pl."),
-  MX("@", 30, "mx1.zenbox.pl."),
+  MX("@", 0, "mail.designcoach.pl."),
 
   CNAME("_96C2D4280C9AC09B2B5AAD694C5F69E9", "73CF3CD81224E3E9D499C5446D51A18F.9FE2C266CE89B0D5DF89FEA0F1375AC9.t0897039001607076961.comodoca.com."), // SSL
   CNAME("autoconfig", "mua-ac-1.zenbox.pl."), // Mailbox
@@ -20,15 +19,21 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   CNAME("new", "d2vrajn1j2g4zf.cloudfront.net."),
   CNAME("www.new", "d2vrajn1j2g4zf.cloudfront.net."),
 
-  TXT("_dmarc", "v=DMARC1; p=none; sp=none"),
-  TXT("_domainkey", "o=~"),
-  TXT("@", "v=spf1 a mx include:_spf.zenbox.pl -all"),
+  TXT("_dmarc", "v=DMARC1;  v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc@designcoach.pl;ruf=mailto:dmarc@designcoach.pl"),
+  TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtDwbTKX5x271GpZ2pa4Ru6/aS4IaTm/wMmngI94eQ2tnhhMg50Z4m88milVa645WW+dFAT/hn9yE4p5oN/a3QCv/apNmG5wuaccKSvnNIlDGPuOvaQTsyODOj2ThafbsjxDCgw5it3D4n8cCNakM1HOVjrjsUUeWP0h6tIx199VwCxkpSs09gkAnx+WzuAlM9y3PfoZBJJ2uIN8tgo+1T0DBldxy+gXuIDajhf1bOtLJ5tjBicC00P241VLZaXsTTMO1clPeBVMN59svYIboiioX12OkiKiPpc3K+s80LpWfs70iwLcE8OE+mhMYgB7FphS4C1ktPN/S5D74gPzHQQIDAQAB;"),
+  SPF_BUILDER({
+      label: "@",
+      parts: [
+          "v=spf1",
+          // Domenomania
+          "ip4:185.17.40.218",
+          "ip4:185.17.43.200,",
+          "include:spf.domenomania.pl",
+          // General
+          "-all"
+      ]
+  }),
 
   TXT("@", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e"),
-  TXT("www", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e"),
-  TXT("x_domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1u3vMBgucfHZcs/yCYsX1Jx++HpiLvYa5aS88JovMnBHhCfA4zYPbRIOfnukGqc/Ksu0bjQMSHBMxltmQZX4ZvjxVfDKgtC9n0UpkSf2LgV2YI+uFUxXx9Zs3W80FTlGgBkcDfl/1Og6FID67/7e2+V7qqKkEgzPjgnxb4h4ZLy1RL+KfUNgnj71MtuKUrUeaFzIpBYClrPbeqsDcdSjre7o8BiLqBLK0KLMzyHjfxypVlo/NDuGh7NnIpUZgJxVIACsWyw2HJAed+7fRIcVOM+o7wj3WmF/+wq+oml+qBfGrKnYL1hmUgsA9dMbwR9XdXFGpZ7Rhyo2cw+c1MYWMQIDAQAB")
-  // TXT("x._domainkey", "v=DKIM1; k=rsa;" +
-  //     "
-  //     p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1u3vMBgucfHZcs/yCYsX1Jx++HpiLvYa5aS88JovMnBHhCfA4zYPbRIOfnukGqc/Ksu0bjQMSHBMxltmQZX4ZvjxVfDKgtC9n0UpkSf2LgV2YI+uFUxXx9Zs3W80FTlGgBkcDfl/1Og6FID67/7e2+V7qqKkEgzPjgnxb4h4ZLy1RL+KfUNgnj71MtuKUrUeaFzIpBYClrPbeqsDcdSjre7o8BiLqBLK0KLMzyHjfxypVlo/NDuGh7NnIpUZgJxVIACsWyw2HJAed+7fRIcVOM+o7wj3WmF/+wq+oml+qBfGrKnYL1hmUgsA9dMbwR9XdXFGpZ7Rhyo2cw+c1MYWMQIDAQAB")
-  // FixMe: add using DKIM builder
+  TXT("www", "dcf8f214ee54b3bc14df21425f163c65f3a29620e6ea070a91dbf68798a9928e")
 );
