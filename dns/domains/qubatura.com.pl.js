@@ -19,6 +19,7 @@ D("qubatura.com.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
           "+mx",
           "+ip4:185.17.43.198",
           "+ip4:185.17.40.218",
+          "+ip4:185.17.43.200",
           "-all"
       ]
   }),
