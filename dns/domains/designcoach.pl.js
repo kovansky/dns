@@ -12,8 +12,6 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   MX("@", 0, "mail.designcoach.pl."),
 
   CNAME("_96C2D4280C9AC09B2B5AAD694C5F69E9", "73CF3CD81224E3E9D499C5446D51A18F.9FE2C266CE89B0D5DF89FEA0F1375AC9.t0897039001607076961.comodoca.com."), // SSL
-  CNAME("autoconfig", "mua-ac-1.zenbox.pl."), // Mailbox
-  CNAME("autodiscover", "mua-ac-1.zenbox.pl."), // Mailbox
   CNAME("_8016cafd54cf83dff1c996a4a0c65f3d.new", "_d94b6f88f5827b1573c4ca8c842fd4ce.qwknvqrlct.acm-validations.aws."), // AWS ACM validation
   CNAME("_a3810d97ed44081327f51e3a15380bf6.www.new", "_e2c54b76b65dac794ffbbf514eb3f7cf.qwknvqrlct.acm-validations.aws."), // AWS ACM validation
   CNAME("new", "d2vrajn1j2g4zf.cloudfront.net."),
