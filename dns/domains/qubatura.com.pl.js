@@ -11,7 +11,6 @@ D("qubatura.com.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 
   TXT("_dmarc", " v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc@qubatura.com.pl;ruf=mailto:dmarc@qubatura.com.pl "),
   TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyU9AmWuXMmjKx2eDcH9cAXYeuNTfC405PINPZ3h19T3Uv/XCljYDce6DpgaSLhGyNmvbbBMQ22bEkuID0tx2HH4+0fI7yQO8H9UtLnvw8c+Msy2+CmKpDddtYWHvTZ5s0chv/syHxdnjCbJzTmLvUcX9EGn4KfEOctGftgkBdaynYTqKTC90AYz1NgwbJyYmnWcshlaUtCWrsYwn4OLht53/m22NfBIjyZmEWH5iPJDyrCvZD/ZtDfL8yrqf8FtnHX/JnctzhPgwv7DAj4dPKH5ZjKhl+vLzMuDGdYmsezmV7mY9QsNjGW/5Cg20KOnU9mYrGcaLr8qmLrK5DUJtjQIDAQAB;"),
-  TXT("@", "v=spf1 a mx include:_spf.zenbox.pl -all"),
   SPF_BUILDER({
       label: "@",
       parts: [
@@ -20,7 +19,6 @@ D("qubatura.com.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
           "+mx",
           "+ip4:185.17.43.198",
           "+ip4:185.17.40.218",
-          "+ip4:185.17.43.200",
           "-all"
       ]
   }),
