@@ -9,7 +9,7 @@ D("tycidomki.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 	MX("@", 0, "mail.tycidomki.pl."),
 
 	TXT("_dmarc", "v=DMARC1;  v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc@designcoach.pl;ruf=mailto:dmarc@designcoach.pl"),
-	TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtDwbTKX5x271GpZ2pa4Ru6/aS4IaTm/wMmngI94eQ2tnhhMg50Z4m88milVa645WW+dFAT/hn9yE4p5oN/a3QCv/apNmG5wuaccKSvnNIlDGPuOvaQTsyODOj2ThafbsjxDCgw5it3D4n8cCNakM1HOVjrjsUUeWP0h6tIx199VwCxkpSs09gkAnx+WzuAlM9y3PfoZBJJ2uIN8tgo+1T0DBldxy+gXuIDajhf1bOtLJ5tjBicC00P241VLZaXsTTMO1clPeBVMN59svYIboiioX12OkiKiPpc3K+s80LpWfs70iwLcE8OE+mhMYgB7FphS4C1ktPN/S5D74gPzHQQIDAQAB;"),
+	TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm4+yJ+gTXTl7CkD+58EBpQ1C/TzqC7jV5yh3TKWIg1e82PleF1q2jfVi0HGAzvWAB3PreH310uSho8dHYoEhUyPUmW0b4qGeokvp0dlL5j5m+dcWvKMe+jg2skOMrETA8bTzXiO3dt8ytBlfjODCwxYA5ln8ofn1CLOqCxmQRvpjtyyOezL0QtNdpRpUdM3/IbluWYo+LzowzbqqDjwC1cN5j2ykI9gXjHY7HEUoCzhFl7Ndz73EQF8nQc3d3BKwvIUTiZiEUZ5PUB8DLU/7crBdb+EQIf31AsN7tQ7+Ia/wY83fJdQbsQW2xJq/WY8sQ6ujRdIkCcgPzOOLSrsykwIDAQAB;"),
 	SPF_BUILDER({
 		label: "@",
 		parts: [
