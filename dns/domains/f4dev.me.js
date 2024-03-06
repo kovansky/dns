@@ -1,6 +1,11 @@
 D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("*", AZYMONDIAS),
 
+    // ZHP Migration
+    A("hufiec", DOMENOMANIA_ZHP),
+    A("5dw", DOMENOMANIA_ZHP),
+    A("platforma2", DOMENOMANIA_ZHP),
+
     // GitHub Pages f4dev
     A("@", "192.30.252.153", CF_PROXY_ON),
     A("@", "192.30.252.154", CF_PROXY_ON),
