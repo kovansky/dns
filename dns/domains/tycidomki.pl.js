@@ -9,6 +9,7 @@ D("tycidomki.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 	A("nowa", AZYMONDIAS),
 	A("nowe", AZYMONDIAS),
 	A("admin", AZYMONDIAS),
+	A("doli", AZYMONDIAS),
 
 	A("mail", DOMENOMANIA_DCOACH),
 	MX("@", 0, "mail.tycidomki.pl."),
