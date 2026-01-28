@@ -2,6 +2,7 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     A("*", AZYMONDIAS),
 
     A("koravari", KORAVARI),
+    A("*.koravari", KORAVARI),
 
     // ZHP Migration
     A("hufiec", ZHP_NOWE),

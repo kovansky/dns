@@ -33,5 +33,5 @@ D("qubatura.com.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   TXT(
       "@",
       "google-site-verification=iWWhFbCz36-Y3pgr7-1_j4XzjIJu7V8VpQ3-LJEgPeI",
-  ),
+  )
 );
