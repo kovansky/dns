@@ -20,7 +20,7 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     AAAA("www.platforma", "2001:41d0:301:5::27", CF_PROXY_ON),
 
     // UFO Media
-    OVH_REDIRECT("ufo.cms", "https://panel.ufomedia.pl/admin", 301),
+    A("image.services", KORAVARI),
     A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
     CNAME("ufo.fly", "ufo-starbase.fly.dev."),
     CNAME('ufo-assets', 'public.r2.dev.', CF_PROXY_ON),
