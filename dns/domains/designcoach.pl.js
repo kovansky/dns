@@ -7,7 +7,7 @@ D("designcoach.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
   A("preview", DOMENOMANIA_DCOACH), // Drafts website
   A("prezent", DOMENOMANIA_DCOACH),
   A("mail", DOMENOMANIA_DCOACH),
-  A("panel", AZYMONDIAS),
+  A("panel", KORAVARI),
 
   MX("@", 0, "mail.designcoach.pl."),
 
