@@ -1,9 +1,9 @@
 D("robroyart.xyz", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     DefaultTTL(1),
 
-    A("*", AZYMONDIAS),
-    A("@", AZYMONDIAS, CF_PROXY_OFF),
-    A("www", AZYMONDIAS, CF_PROXY_OFF),
+    A("*", KORAVARI),
+    A("@", KORAVARI, CF_PROXY_OFF),
+    A("www", KORAVARI, CF_PROXY_OFF),
 
     MX('@', 10, 'eforward1.registrar-servers.com.'),
     MX('@', 10, 'eforward2.registrar-servers.com.'),
