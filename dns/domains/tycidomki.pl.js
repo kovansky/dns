@@ -1,14 +1,10 @@
 D("tycidomki.pl", REGISTRAR_OVH, DnsProvider(PROVIDER_OVH),
 	DefaultTTL(3600),
 
-	A('@', AZYMONDIAS),
-	A('www', AZYMONDIAS),
-	A('panel', AZYMONDIAS),
-	A('static', AZYMONDIAS),
+	A('@', KORAVARI),
+	A('www', KORAVARI),
 
-	A("nowa", AZYMONDIAS),
-	A("nowe", AZYMONDIAS),
-	A("admin", AZYMONDIAS),
+	A("admin", KORAVARI),
 	A("doli", AZYMONDIAS),
 
 	A("mail", DOMENOMANIA_DCOACH),
