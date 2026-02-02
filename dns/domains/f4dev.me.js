@@ -1,5 +1,5 @@
 D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
-    A("*", AZYMONDIAS),
+    A("*", KORAVARI),
 
     A("koravari", KORAVARI),
     A("*.koravari", KORAVARI),
@@ -22,7 +22,6 @@ D("f4dev.me", REGISTRAR_NONE, DnsProvider(PROVIDER_CLOUDFLARE),
     // UFO Media
     A("image.services", KORAVARI),
     A("meili.services", KORAVARI),
-    A("ufo.preview", AZYMONDIAS, CF_PROXY_OFF),
     CNAME("ufo.fly", "ufo-starbase.fly.dev."),
     CNAME('ufo-assets', 'public.r2.dev.', CF_PROXY_ON),
 
